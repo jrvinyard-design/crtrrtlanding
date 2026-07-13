@@ -34,7 +34,7 @@ export default function Landing() {
       `}</style>
 
       {/* Header */}
-      <header style={{ borderBottom: "1px solid #DCD7C9", padding: "16px 24px", display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, background: "#F7F5FEE", backdropFilter: "blur(6px)", zIndex: 10 }}>
+      <header style={{ borderBottom: "1px solid #DCD7C9", padding: "16px 24px", display: "flex", alignItems: "center", justifyContent: "space-between", position: "sticky", top: 0, background: "#F7F5F0", backdropFilter: "blur(6px)", zIndex: 10 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <Activity size={22} color="#E85D3D" strokeWidth={2.5} />
           <span className="mono" style={{ fontSize: 14, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>CRT/RRT Board Prep</span>
