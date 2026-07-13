@@ -44,7 +44,7 @@ export default function Landing() {
           <a href="#pricing" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>Pricing</a>
           <a href="#faq" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>FAQ</a>
         </nav>
-        <button onClick={() => window.location.href = "https://crtrrtapp.netlify.app/"} style={{ background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "9px 18px", fontSize: 13, fontWeight: 600, cursor: "pointer" }}>Start free</button>
+        <a href="https://crtrrtapp.netlify.app/" style={{ background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "9px 18px", fontSize: 13, fontWeight: 600, cursor: "pointer", textDecoration: "none" }}>Start free</a>
       </header>
 
       {/* Hero */}
@@ -60,9 +60,9 @@ export default function Landing() {
             quotas as the real TMC and CSE. No memorized banks. No stale editions.
           </p>
           <div style={{ display: "flex", gap: 12, alignItems: "center", marginBottom: 10 }}>
-            <button onClick={() => window.location.href = "https://crtrrtapp.netlify.app/"} style={{ background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 26px", fontSize: 14, fontWeight: 600, display: "inline-flex", alignItems: "center", gap: 8, cursor: "pointer" }}>
+            <a href="https://crtrrtapp.netlify.app/" style={{ background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 26px", fontSize: 14, fontWeight: 600, display: "inline-flex", alignItems: "center", gap: 8, cursor: "pointer", textDecoration: "none" }}>
               Try 15 questions free <ChevronRight size={16} />
-            </button>
+            </a>
           </div>
           <p className="mono" style={{ fontSize: 11, color: "#8A8578" }}>No card required · Cancel anytime</p>
         </div>
@@ -159,7 +159,7 @@ export default function Landing() {
                 </div>
               ))}
             </div>
-            <button onClick={() => window.location.href = "https://crtrrtapp.netlify.app/"} style={{ width: "100%", background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 0", fontSize: 14, fontWeight: 700, cursor: "pointer" }}>Start free, upgrade anytime</button>
+            <a href="https://crtrrtapp.netlify.app/" style={{ width: "100%", background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 0", fontSize: 14, fontWeight: 700, cursor: "pointer", textDecoration: "none", display: "block", textAlign: "center", boxSizing: "border-box" }}>Start free, upgrade anytime</a>
           </div>
         </div>
       </section>
