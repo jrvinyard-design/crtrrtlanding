@@ -45,7 +45,7 @@ export default function Landing() {
           <a href="#faq" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>FAQ</a>
           <a href="/blog/" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>Blog</a>
         </nav>
-        <a href="https://crtrrtapp.netlify.app/" style={{ background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "9px 18px", fontSize: 13, fontWeight: 600, cursor: "pointer", textDecoration: "none" }}>Start free</a>
+        <a href="https://app.crtrrtboardprep.com/" style={{ background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "9px 18px", fontSize: 13, fontWeight: 600, cursor: "pointer", textDecoration: "none" }}>Start free</a>
       </header>
 
       {/* Hero */}
@@ -61,7 +61,7 @@ export default function Landing() {
             quotas as the real TMC and CSE. No memorized banks. No stale editions.
           </p>
           <div style={{ display: "flex", gap: 12, alignItems: "center", marginBottom: 10 }}>
-            <a href="https://crtrrtapp.netlify.app/" style={{ background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 26px", fontSize: 14, fontWeight: 600, display: "inline-flex", alignItems: "center", gap: 8, cursor: "pointer", textDecoration: "none" }}>
+            <a href="https://app.crtrrtboardprep.com/" style={{ background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 26px", fontSize: 14, fontWeight: 600, display: "inline-flex", alignItems: "center", gap: 8, cursor: "pointer", textDecoration: "none" }}>
               Try 15 questions free <ChevronRight size={16} />
             </a>
           </div>
@@ -160,8 +160,8 @@ export default function Landing() {
                 </div>
               ))}
             </div>
-            <a href="https://crtrrtapp.netlify.app/" style={{ width: "100%", background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 0", fontSize: 14, fontWeight: 700, cursor: "pointer", textDecoration: "none", display: "block", textAlign: "center", boxSizing: "border-box" }}>Start free, upgrade anytime</a>
-            <a href="https://crtrrtapp.netlify.app/?upgrade=1" style={{ width: "100%", background: "#E85D3D", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 0", fontSize: 14, fontWeight: 700, cursor: "pointer", textDecoration: "none", display: "block", textAlign: "center", boxSizing: "border-box", marginTop: 10 }}>Purchase Now — Skip to Checkout</a>
+            <a href="https://app.crtrrtboardprep.com/" style={{ width: "100%", background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 0", fontSize: 14, fontWeight: 700, cursor: "pointer", textDecoration: "none", display: "block", textAlign: "center", boxSizing: "border-box" }}>Start free, upgrade anytime</a>
+            <a href="https://app.crtrrtboardprep.com/?upgrade=1" style={{ width: "100%", background: "#E85D3D", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 0", fontSize: 14, fontWeight: 700, cursor: "pointer", textDecoration: "none", display: "block", textAlign: "center", boxSizing: "border-box", marginTop: 10 }}>Purchase Now — Skip to Checkout</a>
           </div>
         </div>
       </section>
