@@ -10,7 +10,7 @@ const DOMAINS = [
 const FAQS = [
   { q: "Is this affiliated with the NBRC?", a: "No. CRT/RRT Board Prep is an independent study tool built from the publicly available NBRC Detailed Content Outline. All practice questions are original — modeled on the exam's structure and difficulty, never copied from real or retired NBRC items." },
   { q: "How is this different from a static question bank or study book?", a: "Books and static banks run out — you eventually memorize the answer, not the reasoning. Every question here is generated fresh, weighted to match the real domain and cognitive-level mix, so you keep getting new scenarios until the reasoning actually sticks." },
-  { q: "Does this cover the new 2027 RT Exam?", a: "Yes. The TMC/CSE track covers exams through December 2026; the RT Exam track is built for the combined format starting 2027. Pick your track when you sign up, or study both." },
+  { q: "Does this cover the new 2027 RT Exam?", a: "Not yet — we're actively building a dedicated 2027 RT Exam track. Right now CRT/RRT Board Prep covers the current TMC and CSE in full depth, which remains the exam most students are sitting for through 2026." },
   { q: "Can I cancel anytime?", a: "Yes — cancel from your account settings whenever you want. You'll keep full access through the end of your current billing period." },
   { q: "Is a free trial available?", a: "Yes. You get 15 free practice questions with full explanations, no card required, so you can see the question quality before subscribing." },
 ];
@@ -43,6 +43,7 @@ export default function Landing() {
           <a href="#blueprint" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>How it works</a>
           <a href="#pricing" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>Pricing</a>
           <a href="#faq" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>FAQ</a>
+          <a href="/blog/" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>Blog</a>
         </nav>
         <a href="https://crtrrtapp.netlify.app/" style={{ background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "9px 18px", fontSize: 13, fontWeight: 600, cursor: "pointer", textDecoration: "none" }}>Start free</a>
       </header>
@@ -50,7 +51,7 @@ export default function Landing() {
       {/* Hero */}
       <section style={{ maxWidth: 980, margin: "0 auto", padding: "72px 24px 48px", display: "flex", gap: 56, alignItems: "center" }} className="stack-mobile">
         <div style={{ flex: 1, minWidth: 280 }}>
-          <p className="mono" style={{ fontSize: 12, letterSpacing: "0.08em", color: "#E85D3D", fontWeight: 700, marginBottom: 14 }}>TMC · CSE · 2027 RT EXAM READY</p>
+          <p className="mono" style={{ fontSize: 12, letterSpacing: "0.08em", color: "#E85D3D", fontWeight: 700, marginBottom: 14 }}>TMC · CSE · 2027 RT EXAM PREP COMING SOON</p>
           <h1 className="serif" style={{ fontSize: 42, fontWeight: 600, lineHeight: 1.14, margin: "0 0 18px" }}>
             Study the exam you'll actually sit for — not a book someone wrote in 2019.
           </h1>
@@ -150,7 +151,7 @@ export default function Landing() {
                 "Full CSE branching simulations",
                 "Blueprint-weighted practice sets — not random",
                 "Adaptive targeting of your weakest domains",
-                "2026 legacy track + 2027 RT Exam track",
+                "Full TMC + CSE coverage — 2027 RT Exam track coming soon",
                 "Progress tracking by domain and cognitive level",
               ].map((f, i) => (
                 <div key={i} style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
@@ -160,6 +161,7 @@ export default function Landing() {
               ))}
             </div>
             <a href="https://crtrrtapp.netlify.app/" style={{ width: "100%", background: "#1B2A4A", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 0", fontSize: 14, fontWeight: 700, cursor: "pointer", textDecoration: "none", display: "block", textAlign: "center", boxSizing: "border-box" }}>Start free, upgrade anytime</a>
+            <a href="https://crtrrtapp.netlify.app/?upgrade=1" style={{ width: "100%", background: "#E85D3D", color: "#F7F5F0", border: "none", borderRadius: 3, padding: "13px 0", fontSize: 14, fontWeight: 700, cursor: "pointer", textDecoration: "none", display: "block", textAlign: "center", boxSizing: "border-box", marginTop: 10 }}>Purchase Now — Skip to Checkout</a>
           </div>
         </div>
       </section>
