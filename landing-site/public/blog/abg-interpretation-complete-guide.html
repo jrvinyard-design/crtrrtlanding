@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABG Interpretation: The Complete Guide | CRT/RRT Board Prep</title>
+  <meta name="description" content="A complete, step-by-step guide to arterial blood gas interpretation — pH, PaCO2, HCO3, compensation, oxygenation, and how it's tested on the TMC and RTE." />
+  <link rel="canonical" href="https://crtrrtboardprep.com/blog/abg-interpretation-complete-guide.html" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Lora', Georgia, serif; background: #F7F5F0; color: #1B2A4A; line-height: 1.7; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    header { border-bottom: 1px solid #DCD7C9; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1B2A4A; }
+    .logo span { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+    nav a { font-size: 13px; color: #4A4536; text-decoration: none; margin-left: 20px; }
+    article { max-width: 720px; margin: 0 auto; padding: 56px 24px 40px; }
+    .breadcrumb { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8A8578; margin-bottom: 20px; }
+    .breadcrumb a { color: #8A8578; }
+    .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #E85D3D; font-weight: 700; margin-bottom: 14px; }
+    h1 { font-size: 34px; font-weight: 600; margin-bottom: 20px; line-height: 1.22; }
+    h2 { font-size: 24px; font-weight: 600; margin: 44px 0 16px; }
+    h3 { font-size: 18px; font-weight: 700; margin: 28px 0 10px; }
+    p { font-size: 16px; color: #2A2620; margin-bottom: 16px; }
+    ul, ol { margin: 0 0 18px 22px; }
+    li { font-size: 16px; color: #2A2620; margin-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #FFFFFF; border: 1px solid #DCD7C9; border-radius: 6px; overflow: hidden; }
+    th, td { text-align: left; padding: 12px 16px; font-size: 14px; border-bottom: 1px solid #DCD7C9; }
+    th { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.04em; color: #8A8578; text-transform: uppercase; }
+    tr:last-child td { border-bottom: none; }
+    .example-box { background: #FFFFFF; border: 1px solid #DCD7C9; border-left: 3px solid #2D8B6F; border-radius: 0 6px 6px 0; padding: 20px 22px; margin: 20px 0; }
+    .example-box p:last-child { margin-bottom: 0; }
+    .example-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #2D8B6F; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 8px; display: block; }
+    .note-box { background: #1B2A4A0D; border-left: 3px solid #1B2A4A; padding: 16px 20px; margin: 20px 0; border-radius: 0 4px 4px 0; }
+    .note-box p { margin-bottom: 0; font-size: 14px; }
+    .toc { background: #FFFFFF; border: 1px solid #DCD7C9; border-radius: 8px; padding: 22px 24px; margin: 28px 0; }
+    .toc p { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.06em; color: #8A8578; font-weight: 700; margin-bottom: 12px; }
+    .toc ul { margin: 0 0 0 18px; }
+    .toc li { font-size: 14px; margin-bottom: 6px; }
+    .toc a { color: #1B2A4A; text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .cta-box { background: #1B2A4A; border-radius: 8px; padding: 32px 28px; margin: 44px 0; text-align: center; }
+    .cta-box h3 { color: #F7F5F0; font-size: 20px; font-weight: 600; margin-bottom: 10px; margin-top: 0; }
+    .cta-box p { color: #B8C4D9; font-size: 14px; margin-bottom: 20px; }
+    .cta-button { display: inline-block; background: #E85D3D; color: #F7F5F0; text-decoration: none; padding: 13px 26px; border-radius: 4px; font-weight: 700; font-size: 14px; }
+    footer { border-top: 1px solid #DCD7C9; padding: 24px; text-align: center; margin-top: 40px; }
+    footer p { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8A8578; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" class="logo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E85D3D" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      <span>CRT/RRT Board Prep</span>
+    </a>
+    <nav><a href="/blog/">All Articles</a></nav>
+  </header>
+
+  <article>
+    <p class="breadcrumb"><a href="/blog/">Study Guide</a> / Clinical Calculations</p>
+    <p class="eyebrow">CLINICAL CALCULATIONS</p>
+    <h1>ABG Interpretation: The Complete Guide</h1>
+
+    <p>Arterial blood gas interpretation is the single most heavily tested clinical skill on RT board exams — and one of the most useful skills you'll actually use at the bedside for the rest of your career. This guide walks through the full method: what each value means, how to work through a gas systematically, and how the exam likes to test it.</p>
+
+    <div class="toc">
+      <p>ON THIS PAGE</p>
+      <ul>
+        <li><a href="#values">The Core Values</a></li>
+        <li><a href="#method">The Systematic Method</a></li>
+        <li><a href="#compensation">Understanding Compensation</a></li>
+        <li><a href="#disorders">The Four Primary Disorders</a></li>
+        <li><a href="#mixed">Mixed Disorders</a></li>
+        <li><a href="#oxygenation">Interpreting Oxygenation Separately</a></li>
+        <li><a href="#ventilator">ABGs and Ventilator Management</a></li>
+        <li><a href="#exam">How the Exam Tests This</a></li>
+      </ul>
+    </div>
+
+    <h2 id="values">The Core Values</h2>
+    <p>A standard ABG report gives you six numbers. Each one is doing a different job, and knowing what each represents is the foundation everything else builds on.</p>
+
+    <table>
+      <tr><th>Value</th><th>Normal Range</th><th>What It Represents</th></tr>
+      <tr><td>pH</td><td>7.35–7.45</td><td>Overall acid-base status</td></tr>
+      <tr><td>PaCO2</td><td>35–45 mmHg</td><td>Respiratory (ventilation) component</td></tr>
+      <tr><td>HCO3</td><td>22–26 mEq/L</td><td>Metabolic (renal) component</td></tr>
+      <tr><td>PaO2</td><td>80–100 mmHg (room air)</td><td>Oxygenation status</td></tr>
+      <tr><td>SaO2</td><td>95–98%</td><td>Hemoglobin saturation</td></tr>
+    </table>
+
+    <p>Two of these — PaCO2 and HCO3 — are what drive acid-base interpretation. PaCO2 is controlled by the lungs and changes within seconds to minutes. HCO3 is controlled by the kidneys and changes over hours to days. That difference in speed is exactly why acute and chronic disturbances look different on a gas, which we'll get into shortly.</p>
+
+    <h2 id="method">The Systematic Method</h2>
+    <p>The single biggest mistake students make with ABGs isn't a knowledge gap — it's skipping steps or doing them out of order. Use the same sequence every time, and the interpretation becomes almost mechanical.</p>
+
+    <h3>Step 1: Look at the pH</h3>
+    <p>This tells you the direction of the problem before you look at anything else. Below 7.35 is acidic. Above 7.45 is alkalotic. Landing in the normal range doesn't automatically mean nothing is wrong — a gas can be fully compensated and still reflect a real underlying disorder, which is why you don't stop here.</p>
+
+    <h3>Step 2: Decide Respiratory or Metabolic</h3>
+    <p>Look at PaCO2 and HCO3 and ask which one explains the direction the pH moved. This is where the classic memory trick helps:</p>
+    <ul>
+      <li><strong>PaCO2 moves opposite to pH</strong> in a primary respiratory problem (CO2 up, pH down — or CO2 down, pH up)</li>
+      <li><strong>HCO3 moves the same direction as pH</strong> in a primary metabolic problem (HCO3 up, pH up — or HCO3 down, pH down)</li>
+    </ul>
+
+    <h3>Step 3: Check for Compensation</h3>
+    <p>Once you've identified the primary problem, look at whether the *other* system has started to respond. We'll cover this in depth in the next section, since it's where most interpretation mistakes actually happen.</p>
+
+    <h3>Step 4: Interpret Oxygenation Separately</h3>
+    <p>PaO2 and SaO2 tell you about oxygenation, not acid-base status — and they should be assessed as their own, separate question. A patient can have a completely normal pH and still be dangerously hypoxemic.</p>
+
+    <h2 id="compensation">Understanding Compensation</h2>
+    <p>Compensation is the body's attempt to use the "other" system to push pH back toward normal. If the primary problem is respiratory, the kidneys compensate by adjusting bicarbonate. If the primary problem is metabolic, the lungs compensate by adjusting ventilation.</p>
+
+    <p>There are three compensation states you need to be able to recognize:</p>
+
+    <div class="example-box">
+      <span class="example-label">UNCOMPENSATED</span>
+      <p>The pH is abnormal, and only the primary value (PaCO2 or HCO3) has moved. The other system hasn't caught up yet — this pattern is typical of something acute.</p>
+    </div>
+
+    <div class="example-box">
+      <span class="example-label">PARTIALLY COMPENSATED</span>
+      <p>The pH is still abnormal, but BOTH the primary value and the compensating value have shifted. The body is actively correcting, just hasn't finished the job.</p>
+    </div>
+
+    <div class="example-box">
+      <span class="example-label">FULLY COMPENSATED</span>
+      <p>The pH has returned to the normal range (though it will typically still lean toward the original disturbance's side of 7.40), while both PaCO2 and HCO3 remain abnormal. This pattern is classic for chronic conditions, like a longstanding COPD patient.</p>
+    </div>
+
+    <p>One rule worth memorizing: the body essentially never overcompensates. Compensation moves pH back toward the 7.35–7.45 range, but it won't push pH past normal in the opposite direction. If you calculate a gas and get a result implying overcompensation, double-check your work — you likely misidentified the primary disorder.</p>
+
+    <h2 id="disorders">The Four Primary Disorders</h2>
+
+    <h3>Respiratory Acidosis</h3>
+    <p>Caused by inadequate ventilation — the lungs aren't clearing CO2 fast enough, so it builds up in the blood.</p>
+    <p><strong>Common causes:</strong> COPD exacerbation, opioid overdose, neuromuscular weakness, severe asthma, airway obstruction, respiratory muscle fatigue.</p>
+    <div class="example-box">
+      <span class="example-label">WORKED EXAMPLE</span>
+      <p>A patient with a fentanyl overdose has pH 7.24, PaCO2 68 mmHg, HCO3 25 mEq/L. The low pH plus high PaCO2 confirms respiratory acidosis. HCO3 is still essentially normal — the kidneys haven't had time to respond yet. This is <strong>acute, uncompensated respiratory acidosis</strong> from opioid-induced hypoventilation.</p>
+    </div>
+
+    <h3>Respiratory Alkalosis</h3>
+    <p>Caused by excessive ventilation — CO2 is being blown off faster than the body produces it.</p>
+    <p><strong>Common causes:</strong> anxiety/pain, fever, sepsis, hypoxemia-driven hyperventilation, pulmonary embolism, over-aggressive mechanical ventilation.</p>
+    <div class="note-box">
+      <p><strong>Don't assume anxiety.</strong> Hyperventilation is often a compensatory response to something more serious — hypoxemia, sepsis, or a PE can all present this way. Rule those out before settling on "anxiety" as the cause.</p>
+    </div>
+
+    <h3>Metabolic Acidosis</h3>
+    <p>Caused by a drop in bicarbonate or an accumulation of fixed acids.</p>
+    <p><strong>Common causes:</strong> DKA, lactic acidosis (shock, sepsis), renal failure, severe diarrhea, toxic ingestions.</p>
+    <div class="example-box">
+      <span class="example-label">WORKED EXAMPLE</span>
+      <p>A patient in DKA has pH 7.19, PaCO2 24 mmHg, HCO3 9 mEq/L. The low pH and low HCO3 confirm metabolic acidosis. The low PaCO2 reflects the patient's own compensatory hyperventilation (Kussmaul respirations) — but since pH remains clearly abnormal, this is <strong>partially compensated metabolic acidosis</strong>.</p>
+    </div>
+
+    <h3>Metabolic Alkalosis</h3>
+    <p>Caused by a rise in bicarbonate or loss of hydrogen ions.</p>
+    <p><strong>Common causes:</strong> prolonged vomiting or NG suction, diuretic therapy, hypokalemia.</p>
+
+    <h2 id="mixed">Mixed Disorders</h2>
+    <p>Sometimes two primary disorders are happening at once, rather than one primary process with compensation. The clue is when PaCO2 and HCO3 move in the SAME direction as each other, both worsening the pH rather than one correcting the other.</p>
+    <div class="example-box">
+      <span class="example-label">WORKED EXAMPLE</span>
+      <p>A patient in cardiac arrest has pH 7.08, PaCO2 58 mmHg, HCO3 15 mEq/L. Both PaCO2 (high, worsening acidosis) and HCO3 (low, worsening acidosis) are pushing the pH in the same direction — neither is compensating for the other. This is <strong>combined respiratory and metabolic acidosis</strong>, reflecting both inadequate ventilation and poor tissue perfusion (lactic acid buildup) during the arrest.</p>
+    </div>
+
+    <h2 id="oxygenation">Interpreting Oxygenation Separately</h2>
+    <p>Once you've worked through acid-base status, evaluate PaO2 on its own terms — it's an entirely separate question from pH, PaCO2, and HCO3.</p>
+    <p>PaO2 always needs to be read alongside FiO2. A PaO2 of 65 mmHg on room air is a mild problem. That same PaO2 while the patient is receiving 80% oxygen is a serious one — it suggests significant shunt physiology that isn't responding well to supplemental oxygen.</p>
+
+    <h2 id="ventilator">ABGs and Ventilator Management</h2>
+    <p>This is where interpretation becomes action. The core principle: <strong>PaCO2 problems get fixed by adjusting ventilation. PaO2 problems get fixed by adjusting oxygenation support.</strong> These are separate levers.</p>
+    <ul>
+      <li>High PaCO2, low pH → increase minute ventilation (rate and/or tidal volume)</li>
+      <li>Low PaCO2, high pH → decrease minute ventilation</li>
+      <li>Low PaO2 → increase FiO2, optimize PEEP, consider recruitment strategies</li>
+    </ul>
+    <p>A common exam trap: a chronic CO2 retainer (like a longstanding COPD patient) doesn't need their PaCO2 aggressively normalized. If their baseline HCO3 is already elevated from years of renal compensation, rapidly dropping their PaCO2 to "normal" can actually push their pH into alkalosis.</p>
+
+    <h2 id="exam">How the Exam Tests This</h2>
+    <p>ABG questions rarely just ask you to state the disorder. More often, they embed a gas inside a clinical scenario and ask what you'd recommend next — meaning you need both the interpretation skill and the clinical judgment to act on it. That's exactly why practicing with realistic, scenario-based questions matters more than memorizing normal ranges alone.</p>
+
+    <div class="cta-box">
+      <h3>Practice this exact skill, question after question</h3>
+      <p>CRT/RRT Board Prep generates fresh, scenario-based ABG questions weighted to the real exam blueprint — plus a free interactive ABG lesson and calculator in the app to practice the method hands-on.</p>
+      <a href="https://app.crtrrtboardprep.com/" class="cta-button">Try 15 free questions →</a>
+    </div>
+  </article>
+
+  <footer>
+    <p>CRT/RRT Board Prep is an independent study tool and is not affiliated with or endorsed by the NBRC.</p>
+  </footer>
+</body>
+</html>
