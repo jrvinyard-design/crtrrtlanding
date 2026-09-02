@@ -42,6 +42,7 @@ export default function Landing() {
         <nav className="hide-mobile" style={{ display: "flex", gap: 28, alignItems: "center" }}>
           <a href="#blueprint" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>How it works</a>
           <a href="#pricing" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>Pricing</a>
+          <a href="https://app.crtrrtboardprep.com/?try=resources" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>Resources</a>
           <a href="#faq" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>FAQ</a>
           <a href="/blog/" style={{ fontSize: 13, color: "#4A4536", textDecoration: "none" }}>Blog</a>
         </nav>
