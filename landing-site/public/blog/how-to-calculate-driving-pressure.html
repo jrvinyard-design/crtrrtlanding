@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Calculate Driving Pressure (And Why It's on the TMC) | CRT/RRT Board Prep</title>
+  <meta name="description" content="Step-by-step walkthrough of the driving pressure formula (Pplat - PEEP), what it tells you about lung compliance, and how the TMC and CSE test it." />
+  <link rel="canonical" href="https://crtrrtboardprep.com/blog/how-to-calculate-driving-pressure.html" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Lora', Georgia, serif; background: #F7F5F0; color: #1B2A4A; line-height: 1.7; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    header { border-bottom: 1px solid #DCD7C9; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1B2A4A; }
+    .logo span { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+    nav a { font-size: 13px; color: #4A4536; text-decoration: none; margin-left: 20px; }
+    article { max-width: 680px; margin: 0 auto; padding: 56px 24px 40px; }
+    .breadcrumb { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8A8578; margin-bottom: 20px; }
+    .breadcrumb a { color: #8A8578; }
+    .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #E85D3D; font-weight: 700; margin-bottom: 14px; }
+    h1 { font-size: 32px; font-weight: 600; margin-bottom: 20px; line-height: 1.25; }
+    h2 { font-size: 22px; font-weight: 600; margin: 36px 0 14px; }
+    p { font-size: 16px; color: #2A2620; margin-bottom: 18px; }
+    .formula-box { background: #1B2A4A; color: #F7F5F0; border-radius: 6px; padding: 24px 26px; margin: 24px 0; }
+    .formula-box .mono { font-size: 22px; font-weight: 700; letter-spacing: 0.02em; }
+    .formula-box p { color: #B8C4D9; font-size: 13px; margin: 8px 0 0; }
+    .example-box { background: #FFFFFF; border: 1px solid #DCD7C9; border-radius: 6px; padding: 22px 24px; margin: 24px 0; }
+    .example-box p:last-child { margin-bottom: 0; }
+    ul { margin: 0 0 18px 20px; }
+    li { font-size: 16px; color: #2A2620; margin-bottom: 8px; }
+    .cta-box { background: #1B2A4A; border-radius: 8px; padding: 32px 28px; margin: 44px 0 0; text-align: center; }
+    .cta-box h3 { color: #F7F5F0; font-size: 20px; font-weight: 600; margin-bottom: 10px; }
+    .cta-box p { color: #B8C4D9; font-size: 14px; margin-bottom: 20px; }
+    .cta-button { display: inline-block; background: #E85D3D; color: #F7F5F0; text-decoration: none; padding: 13px 26px; border-radius: 4px; font-weight: 700; font-size: 14px; }
+    footer { border-top: 1px solid #DCD7C9; padding: 24px; text-align: center; margin-top: 40px; }
+    footer p { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #8A8578; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" class="logo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E85D3D" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      <span>CRT/RRT Board Prep</span>
+    </a>
+    <nav><a href="/blog/">All Articles</a></nav>
+  </header>
+
+  <article>
+    <p class="breadcrumb"><a href="/blog/">Study Guide</a> / Clinical Calculations</p>
+    <p class="eyebrow">CLINICAL CALCULATIONS</p>
+    <h1>How to Calculate Driving Pressure (And Why It's on the TMC)</h1>
+
+    <p>Driving pressure shows up constantly in ARDS ventilator management questions on the TMC, and it's one of those calculations that's simple to compute but easy to misunderstand. Here's exactly how it works, why it matters clinically, and how the exam likes to test it.</p>
+
+    <h2>The formula</h2>
+    <div class="formula-box">
+      <p class="mono">Driving Pressure = Plateau Pressure − PEEP</p>
+      <p>Sometimes written as ΔP = Pplat − PEEP</p>
+    </div>
+
+    <p>That's it — it's a subtraction. The part students actually get tripped up on is <em>which</em> pressure to use (plateau, not peak) and what the number actually represents once you have it.</p>
+
+    <h2>Why plateau pressure, not peak pressure</h2>
+    <p>Peak pressure reflects both airway resistance and lung compliance combined — it's affected by how fast gas is flowing through the airways, not just how stretchy the lung tissue itself is. Plateau pressure, measured during a brief pause with no gas flow, isolates just the compliance side of the equation.</p>
+    <p>Driving pressure is specifically trying to capture <strong>how much pressure change was needed to deliver the tidal volume, accounting for lung and chest wall stretchiness</strong> — so it needs plateau pressure, not peak, to be meaningful.</p>
+
+    <h2>What the number actually tells you</h2>
+    <p>Driving pressure reflects tidal volume relative to the patient's respiratory system compliance. In plain terms: it's telling you how "stiff" the lungs are, adjusted for how big a breath you're actually giving.</p>
+    <ul>
+      <li>A <strong>high</strong> driving pressure suggests the lungs are stiff relative to the tidal volume being delivered — a stretched, less compliant lung is having to accommodate more pressure change than it should for that volume.</li>
+      <li>A driving pressure consistently <strong>above roughly 15 cmH2O</strong> in ARDS patients has been associated with worse outcomes in research on lung-protective ventilation, which is part of why it's become a parameter some clinicians watch alongside — not instead of — plateau pressure and tidal volume targets.</li>
+    </ul>
+
+    <h2>Worked example</h2>
+    <div class="example-box">
+      <p><strong>Given:</strong> A patient on volume control ventilation has a plateau pressure of 26 cmH2O and PEEP set at 8 cmH2O.</p>
+      <p><strong>Calculate:</strong> Driving pressure = 26 − 8 = <strong>18 cmH2O</strong></p>
+      <p>This is on the higher end — worth investigating whether tidal volume can be reduced further (within lung-protective limits) or whether PEEP is optimally titrated for this patient's compliance.</p>
+    </div>
+
+    <h2>How the TMC likes to test this</h2>
+    <p>You won't usually just get asked "what's the formula." More often, the exam gives you a clinical scenario — ventilator settings, a patient history, sometimes a trending set of values over time — and asks you to either calculate the driving pressure yourself, or interpret what a given driving pressure means for the care plan (should PEEP change? Should tidal volume change? Neither?).</p>
+    <p>That's exactly why memorizing the formula alone isn't enough — you also need to practice <em>applying</em> it inside realistic scenarios, which is a different skill than recall.</p>
+
+    <div class="cta-box">
+      <h3>Practice this exact skill with real scenarios</h3>
+      <p>CRT/RRT Board Prep generates fresh ventilator-management questions weighted to the real exam blueprint — including plenty on driving pressure, compliance, and PEEP titration.</p>
+      <a href="https://app.crtrrtboardprep.com/" class="cta-button">Try 15 free questions →</a>
+    </div>
+  </article>
+
+  <footer>
+    <p>CRT/RRT Board Prep is an independent study tool and is not affiliated with or endorsed by the NBRC.</p>
+  </footer>
+</body>
+</html>
