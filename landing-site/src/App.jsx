@@ -65,7 +65,10 @@ export default function Landing() {
               Try 15 questions free <ChevronRight size={16} />
             </a>
           </div>
-          <p className="mono" style={{ fontSize: 11, color: "#8A8578" }}>No card required · Cancel anytime</p>
+          <p className="mono" style={{ fontSize: 11, color: "#8A8578", marginBottom: 14 }}>No card required · Cancel anytime</p>
+          <a href="https://app.crtrrtboardprep.com/?try=rte2027" style={{ fontSize: 13, color: "#E85D3D", fontWeight: 600, textDecoration: "underline" }}>
+            New: try 5 free questions from the 2027 RT Exam format →
+          </a>
         </div>
 
         {/* Signature element: live waveform + blueprint mirror */}
