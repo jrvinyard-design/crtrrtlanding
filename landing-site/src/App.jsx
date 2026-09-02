@@ -141,7 +141,7 @@ export default function Landing() {
 
           <div style={{ background: "#F7F5F0", borderRadius: 8, padding: "36px 32px", textAlign: "left" }}>
             <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 4 }}>
-              <span className="serif" style={{ fontSize: 42, fontWeight: 700 }}>$19</span>
+              <span className="serif" style={{ fontSize: 42, fontWeight: 700 }}>$24.99</span>
               <span style={{ fontSize: 14, color: "#8A8578" }}>/ month</span>
             </div>
             <p style={{ fontSize: 13, color: "#8A8578", marginBottom: 24 }}>Cancel anytime. No long-term contract.</p>
