@@ -188,6 +188,9 @@ export default function Landing() {
       </section>
 
       <footer style={{ borderTop: "1px solid #DCD7C9", padding: "24px", textAlign: "center" }}>
+        <p className="mono" style={{ fontSize: 11, color: "#8A8578", marginBottom: 8 }}>
+          Questions or suggestions? <a href="mailto:support@crtrrtboardprep.com" style={{ color: "#1B2A4A", textDecoration: "underline" }}>support@crtrrtboardprep.com</a>
+        </p>
         <p className="mono" style={{ fontSize: 11, color: "#8A8578" }}>CRT/RRT Board Prep is an independent study tool and is not affiliated with or endorsed by the NBRC.</p>
       </footer>
     </div>
